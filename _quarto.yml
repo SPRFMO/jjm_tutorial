@@ -3,11 +3,20 @@ project:
   output-dir: docs
 
 website:
-  title: "Tutorial on using the stock assessment software jjm"
+  title: "jjm Tutorial "
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - 00_PreWorkshop.qmd
+      - 01_Intro.qmd
+      - 02_DataProcessing.qmd
+      - 03_InputFiles.qmd
+      - 04_RunningModel.qmd
+      - 05_ModifyingInputs.qmd
+      - 06_ModelOutputs.qmd
+      - 07_Retrospectives.qmd
+      - 08_SensitivityAnalyses.qmd
       - about.qmd
 
 format:
@@ -15,6 +24,7 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    toc_float: true
 
 
 

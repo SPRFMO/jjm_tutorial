@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>jjm Tutorial - Intro</title>
+<title>jjm Tutorial - Data (SPRFMO)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link" href="./index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -92,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">SPRFMO assessments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./02_DataProcessing.html">
+    <a class="nav-link active" href="./02_DataProcessing.html" aria-current="page">
  <span class="menu-text">Data (SPRFMO)</span></a>
   </li>  
   <li class="nav-item">
@@ -138,12 +138,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#outline" id="toc-outline" class="nav-link active" data-scroll-target="#outline">Outline</a>
-  <ul class="collapse">
-  <li><a href="#basic-running-examples" id="toc-basic-running-examples" class="nav-link" data-scroll-target="#basic-running-examples">Basic running examples</a></li>
-  <li><a href="#outputs-and-diagnostics" id="toc-outputs-and-diagnostics" class="nav-link" data-scroll-target="#outputs-and-diagnostics">Outputs and Diagnostics</a></li>
-  <li><a href="#sensitivity-analyses-and-model-comparisons" id="toc-sensitivity-analyses-and-model-comparisons" class="nav-link" data-scroll-target="#sensitivity-analyses-and-model-comparisons">Sensitivity analyses and model comparisons</a></li>
-  </ul></li>
+  <li><a href="#data-processing" id="toc-data-processing" class="nav-link active" data-scroll-target="#data-processing">Data Processing</a></li>
+  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise">Exercise</a></li>
   </ul>
 </nav>
     </div>
@@ -152,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Intro</h1>
+<h1 class="title">Data (SPRFMO)</h1>
 </div>
 
 
@@ -167,64 +163,46 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="outline" class="level2">
-<h2 class="anchored" data-anchor-id="outline">Outline</h2>
-<section id="basic-running-examples" class="level3">
-<h3 class="anchored" data-anchor-id="basic-running-examples">Basic running examples</h3>
-<ol type="1">
-<li>Introduction to the jjm model (Link here)</li>
-<li>Running the model from start to finish
-<ol type="1">
-<li>Data input (ALK excel files)</li>
-<li>Data input into JJM</li>
-<li>Model setting, Model equations, Parameters (refer to technical annex)</li>
-<li>Running the 2021 assessment</li>
-<li>Updating input data</li>
-<li>Updating control file
-<ol type="1">
-<li>Single-stock vs two-stock models</li>
-</ol></li>
-</ol></li>
-</ol>
+<section id="data-processing" class="level1">
+<h1>Data Processing</h1>
+<ul>
+<li>Members send data to the Secretariat
+<ul>
+<li>Catch data submitted officially to secretariat</li>
+<li>Catch data also submitted via <a href="https://southpacificrfmo.sharepoint.com/:x:/r/sites/SPRFMOSCJackMackerelWorkingGroup/Shared%20Documents/General/SC-template-ALK-SPRFMO-V3.2.xlsm?d=wca07804cd4bf463b8ae7e07ee32b2e25&amp;csf=1&amp;web=1&amp;e=5WZ53z">ALK templates</a>
+<ul>
+<li>Estimate on catches of the current year based on projection. Projection informed by members, TAC and recent practice</li>
+<li>Recent practice not strictly defined, depends on available information</li>
+</ul></li>
+<li>Composition data submitted in ALK templates, both for fisheries as research cruises
+<ul>
+<li>Manual check on quality / missing variables of the sheets</li>
+<li>Visualisation of the data in these <a href="https://southpacificrfmo.sharepoint.com/:u:/r/sites/SPRFMOSC10/Shared%20Documents/Jack%20Mackerel/JJM%20Workshop/SC9%20Data%20Processing%20Files/01_readALK_generateRaisedData.R?csf=1&amp;web=1&amp;e=fxobad">ALK sheets</a></li>
+<li>Linking Length-Frequency data to ALK data <a href="https://southpacificrfmo.sharepoint.com/:p:/r/sites/SPRFMOSCJackMackerelWorkingGroup/Shared%20Documents/Data%20Workshop%202021/03%20Presentations/SCW11-03%20Raising%20the%20offshore%20fleet%20data.pptx?d=w28add1b87d224b92b2616fb926e23695&amp;csf=1&amp;web=1&amp;e=oq0BCM">Presentation</a></li>
+<li>Automated workflow reading all historic files, new ALK from Chile to produce updated catch-at-age is almost finished</li>
+</ul></li>
+<li>CPUE
+<ul>
+<li>Each individual fleet does their own standardisation process, details found in the technical annex and WDs</li>
+</ul></li>
+<li>Research surveys
+<ul>
+<li>Information from research surveys is submitted via the <a href="https://southpacificrfmo.sharepoint.com/:x:/r/sites/SPRFMOSCJackMackerelWorkingGroup/Shared%20Documents/General/SURVEY_SPRFMO_2021.xlsx?d=w0ee4b1db7f40419fb0bc432dccb37a75&amp;csf=1&amp;web=1&amp;e=ZaLgNK">SURVEY template</a></li>
+<li>Manual check on quality / missing variables of the sheets</li>
+</ul></li>
+</ul></li>
+<li>These data are stored on the Teams <a href="https://southpacificrfmo.sharepoint.com/:f:/r/sites/SPRFMOSCJackMackerelWorkingGroup/Shared%20Documents/Data%20repository?csf=1&amp;web=1&amp;e=huLIns">Data Repo</a></li>
+</ul>
 </section>
-<section id="outputs-and-diagnostics" class="level3">
-<h3 class="anchored" data-anchor-id="outputs-and-diagnostics">Outputs and Diagnostics</h3>
-<ol type="1">
-<li>Understanding the Outputs
-<ol type="1">
-<li>Ascii files (difference between standard ADMB output and specialized ones for JJM)</li>
-<li>JJM outputs (standard)</li>
-<li>Pulling out important quantities from the jjm object (e.g.&nbsp;MSY table)</li>
-<li>Making plots from JJM (custom)</li>
-<li>Stock status under different regimes</li>
-</ol></li>
-<li>Generating new plots for diagnostic purposes</li>
-<li>Retrospective analysis</li>
-</ol>
-</section>
-<section id="sensitivity-analyses-and-model-comparisons" class="level3">
-<h3 class="anchored" data-anchor-id="sensitivity-analyses-and-model-comparisons">Sensitivity analyses and model comparisons</h3>
-<ol type="1">
-<li>Sensitivities in data – e.g.&nbsp;include/drop data
-<ol type="1">
-<li>Replacing CPUE indices</li>
-<li>Replacing age composition data</li>
-</ol></li>
-<li>Sensitivities in model settings
-<ol type="1">
-<li>Changing individual parameters</li>
-</ol></li>
-<li>Comparing model runs
-<ol type="1">
-<li>Current diagnostics available</li>
-<li>Making custom diagnostics</li>
-</ol></li>
-<li>Alternative uncertainty estimates</li>
-<li>Recommendations for improving the assessment</li>
-</ol>
+<section id="exercise" class="level1">
+<h1>Exercise</h1>
+<ul>
+<li>Take a completed ALK from Chile and an incomplete ALK from China and convert the lengths in the Chinese set to catch numbers-at-age by quarter and catch weight-at-age by quarter.</li>
+<li>The complete ALK can be found <a href="https://southpacificrfmo.sharepoint.com/:x:/r/sites/SPRFMOSCJackMackerelWorkingGroup/Shared%20Documents/Data%20Workshop%202021/07%20Personal%20folders/completeALK.xlsm?d=wbf0f406e63dd496fb55e51f5b80d1648&amp;csf=1&amp;web=1&amp;e=5Uhiaj">here</a></li>
+<li>The incomplete ALK can be found <a href="https://southpacificrfmo.sharepoint.com/:x:/r/sites/SPRFMOSCJackMackerelWorkingGroup/Shared%20Documents/Data%20Workshop%202021/07%20Personal%20folders/incompleteALK.xlsm?d=w52c4e6a6a8c444829cef938f30f2668b&amp;csf=1&amp;web=1&amp;e=9bPWoj">here</a></li>
+</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

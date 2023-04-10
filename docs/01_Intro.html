@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>jjm Tutorial - SPRFMO assessments</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">jjm Tutorial</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./00_PreWorkshop.html">
+ <span class="menu-text">Preparation</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./01_Intro.html" aria-current="page">
+ <span class="menu-text">SPRFMO assessments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./02_DataProcessing.html">
+ <span class="menu-text">Data (SPRFMO)</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./03_InputFiles.html">
+ <span class="menu-text">Input Files</span></a>
+  </li>  
+  <li class="dropdown-header">
+ <span class="menu-text">04_PreWorkshop.qmd</span></li>
+  <li class="nav-item">
+    <a class="nav-link" href="./05_ModifyingInputs.html">
+ <span class="menu-text">Data Bridging</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./06_ModelOutputs.html">
+ <span class="menu-text">Model Outputs</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./07_Retrospectives.html">
+ <span class="menu-text">Retrospectives</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./08_SensitivityAnalyses.html">
+ <span class="menu-text">Sensitivity Analyses</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#main-objectives" id="toc-main-objectives" class="nav-link active" data-scroll-target="#main-objectives">Main Objectives</a></li>
+  <li><a href="#overview-of-the-jack-mackerel-assessment-process" id="toc-overview-of-the-jack-mackerel-assessment-process" class="nav-link" data-scroll-target="#overview-of-the-jack-mackerel-assessment-process">Overview of the Jack Mackerel Assessment Process</a>
+  <ul class="collapse">
+  <li><a href="#update-assessments" id="toc-update-assessments" class="nav-link" data-scroll-target="#update-assessments">Update Assessments</a>
+  <ul class="collapse">
+  <li><a href="#example-of-the-process" id="toc-example-of-the-process" class="nav-link" data-scroll-target="#example-of-the-process">Example of the Process</a></li>
+  <li><a href="#example-of-the-model-runs" id="toc-example-of-the-model-runs" class="nav-link" data-scroll-target="#example-of-the-model-runs">Example of the Model Runs</a></li>
+  </ul></li>
+  <li><a href="#what-happens-during-a-benchmark" id="toc-what-happens-during-a-benchmark" class="nav-link" data-scroll-target="#what-happens-during-a-benchmark">What Happens During a Benchmark</a>
+  <ul class="collapse">
+  <li><a href="#example-of-the-process-1" id="toc-example-of-the-process-1" class="nav-link" data-scroll-target="#example-of-the-process-1">Example of the Process</a></li>
+  <li><a href="#example-of-models-run" id="toc-example-of-models-run" class="nav-link" data-scroll-target="#example-of-models-run">Example of Models Run</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">SPRFMO assessments</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<hr>
+<section id="main-objectives" class="level1">
+<h1>Main Objectives</h1>
+<ul>
+<li>Process the data that go into the assessment model</li>
+<li>Run the current jack mackerel assessment model</li>
+<li>Understand the main components of the model</li>
+<li>Be able to update the data and control files with an extra year of data, similar to an update assessment</li>
+</ul>
+<hr>
+</section>
+<section id="overview-of-the-jack-mackerel-assessment-process" class="level1">
+<h1>Overview of the Jack Mackerel Assessment Process</h1>
+<p>The assessment is done every year during the Scientific Committee meeting to provide scientific advice for the management of jack mackerel. The current jack mackerel assessment model was adopted in 2010, with several updates since.</p>
+<p>There are two types of assessment updates we do- update assessments and benchmark assessments.</p>
+<section id="update-assessments" class="level2">
+<h2 class="anchored" data-anchor-id="update-assessments">Update Assessments</h2>
+<ul>
+<li><p>Focus on updating the data for the year</p></li>
+<li><p>Limited number of sensitivity analyses conducted</p></li>
+<li><p>Rarely result in changes to model settings</p></li>
+</ul>
+<section id="example-of-the-process" class="level3">
+<h3 class="anchored" data-anchor-id="example-of-the-process">Example of the Process</h3>
+<ol type="1">
+<li><p>Members send data to Secretariat</p></li>
+<li><p>Data get processed to go into the assessment</p></li>
+<li><p>Data get incrementally introduced to the model (exercise called data bridging)</p></li>
+<li><p>Control file gets updated</p></li>
+<li><p>Assessment gets run</p></li>
+<li><p>Check diagnostics</p></li>
+<li><p>Run (limited number of) sensitivities</p></li>
+<li><p>Choose final model</p></li>
+<li><p>Do projections under four different recruitment scenarios using the final model</p></li>
+<li><p>Do retrospective analysis (both analytical and historical) using the final model</p></li>
+<li><p>Output from “most conservative” model gets put into the harvest control rule</p></li>
+<li><p>Harvest control rule determines catch advice that is presented to the Commission</p></li>
+</ol>
+</section>
+<section id="example-of-the-model-runs" class="level3">
+<h3 class="anchored" data-anchor-id="example-of-the-model-runs">Example of the Model Runs</h3>
+<p>Example of models run during an update (from SC9, also <a href="https://github.com/SPRFMO/jjm/tree/master/assessment">here</a>)</p>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Models 0.x</strong></td>
+<td><strong>Data introductions</strong></td>
+</tr>
+<tr class="even">
+<td>0.00</td>
+<td>Exact 2020 (single stock <code>h1</code> and two-stock <code>h2</code>) model and data set through 2020 (mod1.0 from SC08)</td>
+</tr>
+<tr class="odd">
+<td>0.01</td>
+<td>As 0.00 but with revised catches through 2020 (currently still estimates)</td>
+</tr>
+<tr class="even">
+<td>0.02</td>
+<td>As 0.01 but with updated 2020 fishery age composition data for N_Chile, SC_Chile, and Offshore_Trawl, and updated 2020 fishery length composition data for FarNorth</td>
+</tr>
+<tr class="odd">
+<td>0.03</td>
+<td>As 0.02 but with updated 2020 weight at age data for all fisheries and their associated CPUE indices</td>
+</tr>
+<tr class="even">
+<td>0.04</td>
+<td>As 0.03 but replaced offshore CPUE up to 2020</td>
+</tr>
+<tr class="odd">
+<td>0.05</td>
+<td>As 0.04 but with 2021 catch projections</td>
+</tr>
+<tr class="even">
+<td>0.06</td>
+<td>As 0.05 but with updated 2021 fishery age composition data for N_Chile, SC_Chile, and Offshore_Trawl, and updated 2020 fishery length composition data for FarNorth</td>
+</tr>
+<tr class="odd">
+<td>0.07</td>
+<td>As 0.06 but but with updated 2021 weight at age data for N_Chile, SC_Chile, and FarNorth fleets, and for their associated CPUE indices</td>
+</tr>
+<tr class="even">
+<td>0.08</td>
+<td>As 0.07 but replaced SC_Chile_CPUE index (traditional absolute scaled CPUE by trip)</td>
+</tr>
+<tr class="odd">
+<td>0.09</td>
+<td>As 0.08 but replaced Peru_CPUE index</td>
+</tr>
+<tr class="even">
+<td>0.10</td>
+<td>As 0.09 but with updated AcousN 2021 index, with associated age composition and weight at age</td>
+</tr>
+<tr class="odd">
+<td>———–</td>
+<td>————–</td>
+</tr>
+<tr class="even">
+<td><strong>Models 1.x</strong></td>
+<td><strong>Updated Model and Sensitivities</strong></td>
+</tr>
+<tr class="odd">
+<td>1.00</td>
+<td>Update model (selectivity changes, recruitment) to 2021; 0.10 data file</td>
+</tr>
+<tr class="even">
+<td>1.01</td>
+<td>As 1.00 but use revised data series “antiguo” of age composition and weight at age data for both Chilean fisheries and both Chilean acoustic surveys (assessment/NewAgeData/AgeDataInAssessment.csv)</td>
+</tr>
+<tr class="odd">
+<td>1.02</td>
+<td>As 1.01 but incorporate revised (validated) age data for surveys and fleets with M and maturity updated (M=0.35) (NOT RUN)</td>
+</tr>
+<tr class="even">
+<td>1.03</td>
+<td>As 1.02 but M=0.45 (NOT RUN)</td>
+</tr>
+<tr class="odd">
+<td>1.04</td>
+<td>As <strong>1.01</strong> but with increased uncertainty (CV=0.4) for final year CPUE indices</td>
+</tr>
+<tr class="even">
+<td>1.05</td>
+<td>As <strong>1.04</strong> but replacing 2020/2021 weight at age with 2019 revised “antiguo” data for N_Chile</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="what-happens-during-a-benchmark" class="level2">
+<h2 class="anchored" data-anchor-id="what-happens-during-a-benchmark">What Happens During a Benchmark</h2>
+<ul>
+<li><p>Focus on updating the model settings and testing different model configurations</p></li>
+<li><p>Can also include updates to entire datasets (e.g.&nbsp;if methodology for CPUE analysis has changed)</p></li>
+</ul>
+<section id="example-of-the-process-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-of-the-process-1">Example of the Process</h3>
+<ol type="1">
+<li><p>Members discuss sensitivity analyses they would like to see</p></li>
+<li><p>Configure and run sensitivity analyses</p></li>
+<li><p>View results and discuss</p></li>
+<li><p>Repeat until a final model can be decided upon</p></li>
+</ol>
+</section>
+<section id="example-of-models-run" class="level3">
+<h3 class="anchored" data-anchor-id="example-of-models-run">Example of Models Run</h3>
+<p>Example of models run during a benchmark assessment (from SC6, also <a href="https://github.com/SPRFMO/jjm/tree/master/assessment">here</a>)</p>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.0</td>
+<td>As 0.7 in 2017, selectivity change in Chile N acoustic in 2015 and 2016</td>
+</tr>
+<tr class="even">
+<td>1.1</td>
+<td>As 1.0, but constant selectivity for Chile N Acoustic all years</td>
+</tr>
+<tr class="odd">
+<td>1.2</td>
+<td>As 1.1, but constant selectivity for S-C Chile acoustic all years</td>
+</tr>
+<tr class="even">
+<td>1.3</td>
+<td>As 1.2, but constant selectivity for DEPM all years (was change in 2003)</td>
+</tr>
+<tr class="odd">
+<td>1.4</td>
+<td>As 0.7 in 2017, selectivity change in Chile N acoustic in 2012 and 2016</td>
+</tr>
+<tr class="even">
+<td>1.5</td>
+<td>As 1.4, but replace offshore CPUE w/ new version CV=0.2…dropping Russian nominal</td>
+</tr>
+<tr class="odd">
+<td>1.5_r</td>
+<td>As 1.5, retros to evaluate if Francis weights are stable</td>
+</tr>
+<tr class="even">
+<td>1.6</td>
+<td>As 1.5, but without Chinese CPUE?</td>
+</tr>
+<tr class="odd">
+<td>1.7</td>
+<td>As 1.5, but without Offshore (and Russian) CPUE</td>
+</tr>
+<tr class="even">
+<td>1.8</td>
+<td>As 1.5, but only Offshore CPUE included (all other indices downweighted)</td>
+</tr>
+<tr class="odd">
+<td>1.9</td>
+<td>As 1.5, but only Chinese CPUE included (all other indices downweighted)</td>
+</tr>
+<tr class="even">
+<td>1.10</td>
+<td>As 1.5, but without the Acoustic N data</td>
+</tr>
+<tr class="odd">
+<td>1.11</td>
+<td>As 1.5, but allow fishery selectivity to change up until age 11 and reduce penalty on domedness</td>
+</tr>
+<tr class="even">
+<td>1.12</td>
+<td>As 1.5, but constant average weight at age w/in fleets and surveys (no time varying)</td>
+</tr>
+<tr class="odd">
+<td><strong>1.13</strong></td>
+<td>As 1.5 but rescale sample size using Francis T1.8 method (one iteration)</td>
+</tr>
+<tr class="even">
+<td>1.14</td>
+<td>As 1.12, but use ageing error consistent growth relationship (w/ aL^b for wt-age) and supply Maturity at length to get conversion</td>
+</tr>
+<tr class="odd">
+<td>1.15</td>
+<td>As 1.5, but change catchability in 2012 for Chilean CPUE</td>
+</tr>
+<tr class="even">
+<td>1.16</td>
+<td>As 1.14, but look at alternative values for M, = 0.28?</td>
+</tr>
+<tr class="odd">
+<td>1.1x</td>
+<td>As 1.13?, but estimate M with prior? Do MCMC?</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
