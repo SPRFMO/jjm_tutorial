@@ -1,9 +1,3 @@
----
-title: "Running Model"
-output:
-  html_document:
-    theme: journal
----
 
 ```{r setup, include=FALSE}
 knitr::opts_knit$set(root.dir=here::here())

@@ -1,10 +1,4 @@
----
-title: "Input Files"
-output:
-  html_document:
-    theme: journal
----
-
+# Input Files
 ```{css, echo=F}
 pre {
   overflow-x: scroll

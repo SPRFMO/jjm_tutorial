@@ -1,13 +1,4 @@
----
-title: "Preparation"
-subtitle: "(Workshop from June 2022 conducted by Lee Qi at the University of Washington)"
-output:
-  html_document:
-    theme: journal
-    number_sections: yes
-  word_document:
-    number_sections: yes
----
+
 
 ```{r setup, include=FALSE}
 knitr::opts_knit$set(root.dir=here::here())

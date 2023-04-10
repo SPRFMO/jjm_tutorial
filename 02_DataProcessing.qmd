@@ -1,11 +1,4 @@
----
-title: "Data (SPRFMO)"
-output:
-  html_document:
-    theme: journal
----
-
-# Data Processing
+# Data Processing (SPRFMO)
 
 -   Members send data to the Secretariat
     -   Catch data submitted officially to secretariat
