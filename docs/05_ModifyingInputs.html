@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>jjm Tutorial - Data Bridging</title>
+<title>jjm Tutorial - 6&nbsp; Data Bridging</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,6 +93,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./06_ModelOutputs.html" rel="next">
+<link href="./04_RunningModel.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -103,11 +105,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -126,83 +128,110 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">jjm Tutorial</span>
-    </a>
-  </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html">
- <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./00_PreWorkshop.html">
- <span class="menu-text">Preparation</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./01_Intro.html">
- <span class="menu-text">SPRFMO assessments</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./02_DataProcessing.html">
- <span class="menu-text">Data (SPRFMO)</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./03_InputFiles.html">
- <span class="menu-text">Input Files</span></a>
-  </li>  
-  <li class="dropdown-header">
- <span class="menu-text">04_PreWorkshop.qmd</span></li>
-  <li class="nav-item">
-    <a class="nav-link active" href="./05_ModifyingInputs.html" aria-current="page">
- <span class="menu-text">Data Bridging</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./06_ModelOutputs.html">
- <span class="menu-text">Model Outputs</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./07_Retrospectives.html">
- <span class="menu-text">Retrospectives</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./08_SensitivityAnalyses.html">
- <span class="menu-text">Sensitivity Analyses</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html">
- <span class="menu-text">About</span></a>
-  </li>  
-</ul>
-              <div id="quarto-search" class="" title="Search"></div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Bridging</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">jjm Tutorial</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle sidebar-tool" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Intro</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00_PreWorkshop.html" class="sidebar-item-text sidebar-link">Workshop Overview</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_Intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">SPRFMO assessments</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_DataProcessing.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Processing (SPRFMO)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_InputFiles.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Input Files</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_RunningModel.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Running the Assessment</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_ModifyingInputs.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Bridging</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_ModelOutputs.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Model Outputs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_Retrospectives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Retrospectives</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_SensitivityAnalyses.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Sensitivity Analyses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#data-bridging" id="toc-data-bridging" class="nav-link active" data-scroll-target="#data-bridging">Data Bridging</a></li>
-  <li><a href="#updating-the-control-file" id="toc-updating-the-control-file" class="nav-link" data-scroll-target="#updating-the-control-file">Updating the Control File</a></li>
-  <li><a href="#exercises-using-either-excel-or-r" id="toc-exercises-using-either-excel-or-r" class="nav-link" data-scroll-target="#exercises-using-either-excel-or-r">Exercises (using either Excel or R)</a></li>
-  <li><a href="#debugging-tips-and-tricks" id="toc-debugging-tips-and-tricks" class="nav-link" data-scroll-target="#debugging-tips-and-tricks">Debugging Tips and Tricks</a></li>
+  <li><a href="#data-bridging" id="toc-data-bridging" class="nav-link active" data-scroll-target="#data-bridging"><span class="toc-section-number">7</span>  Data Bridging</a></li>
+  <li><a href="#updating-the-control-file" id="toc-updating-the-control-file" class="nav-link" data-scroll-target="#updating-the-control-file"><span class="toc-section-number">8</span>  Updating the Control File</a></li>
+  <li><a href="#exercises-using-either-excel-or-r" id="toc-exercises-using-either-excel-or-r" class="nav-link" data-scroll-target="#exercises-using-either-excel-or-r"><span class="toc-section-number">9</span>  Exercises (using either Excel or R)</a></li>
+  <li><a href="#debugging-tips-and-tricks" id="toc-debugging-tips-and-tricks" class="nav-link" data-scroll-target="#debugging-tips-and-tricks"><span class="toc-section-number">10</span>  Debugging Tips and Tricks</a></li>
   </ul>
 </nav>
     </div>
@@ -211,7 +240,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Bridging</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Bridging</span></h1>
 </div>
 
 
@@ -237,8 +266,8 @@ pre code {
 }
 </style>
 </div>
-<section id="data-bridging" class="level1">
-<h1>Data Bridging</h1>
+<section id="data-bridging" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Data Bridging</h1>
 <ul>
 <li><p>When data are added incrementally to the assessment</p></li>
 <li><p>Used to be done by hand</p>
@@ -266,8 +295,8 @@ pre code {
 <li><p>For each new data file created, a corresponding control file will have to be made as well. The control files during the data bridging exercise remain relatively static, except for changing the name of the data file and adding the one extra year at the top.</p></li>
 </ul>
 </section>
-<section id="updating-the-control-file" class="level1">
-<h1>Updating the Control File</h1>
+<section id="updating-the-control-file" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Updating the Control File</h1>
 <ul>
 <li>Increments years used to estimate the stock-recruitment relationship by 1</li>
 </ul>
@@ -326,16 +355,16 @@ pre code {
 <span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="fl">0.2</span> <span class="fl">0.7</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="exercises-using-either-excel-or-r" class="level1">
-<h1>Exercises (using either Excel or R)</h1>
+<section id="exercises-using-either-excel-or-r" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Exercises (using either Excel or R)</h1>
 <ul>
 <li><p>Add one year of catch data (as was done in the bridging exercise for <code>0.04</code> to <code>0.05</code>) to the 2021 data file (<code>1.00.dat</code>). Run the model with the updated data file.</p></li>
 <li><p>Update the control file from 2021 (<code>h1_1.00.ctl</code> and <code>h2_1.00</code>) for 2022. Run the updated 2022 model.</p></li>
 <li><p>(If you have time) Go through the SC9 model runs and select a couple of models from the table to recreate.</p></li>
 </ul>
 </section>
-<section id="debugging-tips-and-tricks" class="level1">
-<h1>Debugging Tips and Tricks</h1>
+<section id="debugging-tips-and-tricks" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Debugging Tips and Tricks</h1>
 <ul>
 <li><p>If you’ve edited the input files and the model seems to be giving nonsensical results, it might be that you’ve missed number or a line in the input.</p>
 <ul>
@@ -485,6 +514,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./04_RunningModel.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Running the Assessment</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./06_ModelOutputs.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Model Outputs</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

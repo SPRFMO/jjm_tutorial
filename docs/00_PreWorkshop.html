@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>jjm Tutorial  – preworkshop</title>
+<title>jjm Tutorial - Workshop Overview</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,6 +93,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./01_Intro.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -103,11 +105,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -126,83 +128,107 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">jjm Tutorial</span>
-    </a>
-  </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html">
- <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./00_PreWorkshop.html" aria-current="page">
- <span class="menu-text">Workshop Overview</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./01_Intro.html">
- <span class="menu-text">SPRFMO assessments</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./02_DataProcessing.html">
- <span class="menu-text">Data (SPRFMO)</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./03_InputFiles.html">
- <span class="menu-text">Input Files</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./04_RunningModel.html">
- <span class="menu-text">Running Model</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./05_ModifyingInputs.html">
- <span class="menu-text">Data Bridging</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./06_ModelOutputs.html">
- <span class="menu-text">Model Outputs</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./07_Retrospectives.html">
- <span class="menu-text">Retrospectives</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./08_SensitivityAnalyses.html">
- <span class="menu-text">Sensitivity Analyses</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html">
- <span class="menu-text">About</span></a>
-  </li>  
-</ul>
-              <div id="quarto-search" class="" title="Search"></div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Workshop Overview</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">jjm Tutorial</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle sidebar-tool" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Intro</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00_PreWorkshop.html" class="sidebar-item-text sidebar-link active">Workshop Overview</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_Intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">SPRFMO assessments</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_DataProcessing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Processing (SPRFMO)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_InputFiles.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Input Files</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_RunningModel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Running the Assessment</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_ModifyingInputs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Bridging</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_ModelOutputs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Model Outputs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_Retrospectives.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Retrospectives</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_SensitivityAnalyses.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sensitivity Analyses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#workshop-overview" id="toc-workshop-overview" class="nav-link active" data-scroll-target="#workshop-overview">Workshop Overview</a></li>
-  <li><a href="#workshop-logistics" id="toc-workshop-logistics" class="nav-link" data-scroll-target="#workshop-logistics">Workshop Logistics</a></li>
+  <li><a href="#workshop-logistics" id="toc-workshop-logistics" class="nav-link active" data-scroll-target="#workshop-logistics">Workshop Logistics</a></li>
   <li><a href="#github-instructions" id="toc-github-instructions" class="nav-link" data-scroll-target="#github-instructions">Github Instructions</a>
   <ul class="collapse">
   <li><a href="#cloning-the-repository-recommended" id="toc-cloning-the-repository-recommended" class="nav-link" data-scroll-target="#cloning-the-repository-recommended">Cloning the repository (recommended)</a>
@@ -223,10 +249,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Workshop Overview</h1>
+</div>
 
 
-<section id="workshop-overview" class="level1 unnumbered">
-<h1 class="unnumbered">Workshop Overview</h1>
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
 <p>The main goal of this workshop is to broaden the expertise of the participants in running and understanding the jack mackerel assessment model. The workshop will involve a combination of presentations and hands-on exercises. There will be optional exercises for participants to work on in their own time, and time will be set aside during the workshop for questions about them. Some competency in the R language will be helpful, but help will be provided as requested.</p>
 <p>By the end of the workshop, participants should be able to:</p>
 <ol type="1">
@@ -236,7 +275,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Be able to pull output from model runs to create custom model diagnostics</li>
 <li>Identify areas of improvement for the technical aspects of the assessment process</li>
 </ol>
-</section>
 <section id="workshop-logistics" class="level1 unnumbered">
 <h1 class="unnumbered">Workshop Logistics</h1>
 <p>Prior to the start of the workshop, it is expected that you will have:</p>
@@ -526,6 +564,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Intro</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./01_Intro.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-title">SPRFMO assessments</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
