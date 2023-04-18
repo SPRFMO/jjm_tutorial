@@ -4,7 +4,7 @@ knitr::opts_knit$set(root.dir=here::here())
 knitr::opts_chunk$set(warning=F, message=F, eval=F)
 ```
 
-# Running the Assessment
+# Running a jjm assessment model
 There are two ways you can run the assessment model- using `R` to run the executable, or using the command line.
 
 **Before we start, please make sure you have an executable file. You can find the instructions to compile your own in the Pre-Workshop [document](https://southpacificrfmo.sharepoint.com/:f:/r/sites/SPRFMOSC10/Shared%20Documents/Jack%20Mackerel/JJM%20Workshop/Documents?csf=1&web=1&e=v9hiV4), or you can download it directly from [Teams](https://southpacificrfmo.sharepoint.com/:f:/r/sites/SPRFMOSC10/Shared%20Documents/Jack%20Mackerel/JJM%20Workshop/src?csf=1&web=1&e=cXKA29).**
